@@ -1,0 +1,38 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.eclipse.ui.workbench.texteditor
+Bundle-SymbolicName: org.eclipse.ui.workbench.texteditor; singleton:=t
+ rue
+Built-By: genie.releng
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.5.0,4.0.0)
+ ",org.eclipse.compare.core;bundle-version="[3.5.0,4.0.0)",org.eclipse
+ .core.expressions;bundle-version="[3.4.100,4.0.0)",org.eclipse.jface.
+ text;bundle-version="[3.8.0,4.0.0)",org.eclipse.swt;bundle-version="[
+ 3.107.0,4.0.0)",org.eclipse.ui;bundle-version="[3.5.0,4.0.0)"
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/platfo
+ rm/eclipse.platform.text.git;path="org.eclipse.ui.workbench.textedito
+ r";tag="I20181108-1800";commitId=bb585c8e491a149458dd733ba52c50721fa2
+ 0e39
+Bundle-Vendor: %providerName
+Import-Package: com.ibm.icu.text
+Export-Package: org.eclipse.ui.contentassist,org.eclipse.ui.internal.t
+ exteditor; texteditor="split"; mandatory:="texteditor"; x-friends:="o
+ rg.eclipse.ui.editors",org.eclipse.ui.internal.texteditor.codemining;
+ x-internal:=true,org.eclipse.ui.internal.texteditor.quickdiff;x-inter
+ nal:=true,org.eclipse.ui.internal.texteditor.quickdiff.compare.equiva
+ lence;x-internal:=true,org.eclipse.ui.internal.texteditor.rulers;x-in
+ ternal:=true,org.eclipse.ui.internal.texteditor.spelling;x-internal:=
+ true,org.eclipse.ui.internal.views.minimap;x-internal:=true,org.eclip
+ se.ui.texteditor; texteditor="split"; mandatory:="texteditor",org.ecl
+ ipse.ui.texteditor.link,org.eclipse.ui.texteditor.quickdiff,org.eclip
+ se.ui.texteditor.rulers,org.eclipse.ui.texteditor.spelling,org.eclips
+ e.ui.texteditor.templates
+Bundle-Name: %pluginName
+Bundle-Version: 3.11.200.v20181108-1458
+Bundle-Localization: plugin
+Bundle-Activator: org.eclipse.ui.internal.texteditor.TextEditorPlugin
+Created-By: Apache Maven 3.5.4
+Build-Jdk: 1.8.0_162
+
